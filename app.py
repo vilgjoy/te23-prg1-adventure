@@ -1,5 +1,5 @@
 from book import BOOK
-
+# if answer is anything other than a number, it's invalid
 def input_int(prompt):
     while True:
         try:
@@ -7,19 +7,21 @@ def input_int(prompt):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+
 def get_page(book_data, page_id):
     for page in book_data:
         if page["id"] == page_id:
             return page
     return None
 
+# the page. (The title), (The descrpition), (and the options)
 def show_page(page):
     print(page["title"])
     print(page["text"])
     for i, option in enumerate(page["options"]):
         print(f"{i + 1}. {option['text']}")
 
-
+# inventory and how the options continue the adventure, i guess?
 def main():
     current_id = 1
     inventory = []

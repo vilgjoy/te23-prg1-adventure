@@ -12,7 +12,7 @@ Jag klistrar in formatet som du ska svara i. Bekräfta att du förstår.
 
 ### Formatet 
 
-Här är formatet för att skriva en berättelse i formatet [choose your own adventure]. 
+Här är formatet för att skriva en berättelse i formatet [choose your own adventure].  
 
 ```
 format = [
